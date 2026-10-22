@@ -1,8 +1,59 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
-theme: just-the-docs
+# Jekyll configuration for Just the Docs on GitHub Pages
+title: "PatchProof"
+description: "Addressables Release Rehearsal Lab — Rehearse your Addressables update the way your oldest installed client will live it before your players do."
 
-url: https://just-the-docs.github.io
+# Remote theme configuration for GitHub Pages
+remote_theme: just-the-docs/just-the-docs
 
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+url: "https://decnet-games.github.io"
+baseurl: "/PatchProof-DOC"
+
+# Color scheme & UI
+color_scheme: "dark"
+
+# Search configuration
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  rel_url: true
+  button: false
+
+# Navigation structure
+nav_sort: nav_order
+
+# Heading anchors
+heading_anchors: true
+
+# Auxiliary Links (top right)
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  "Unity Asset Store": "https://assetstore.unity.com/packages/slug/421018"
+  "GitHub Repository": "https://github.com/DecNet-Games/PatchProof-DOC"
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Footer content
+footer_content: "Copyright &copy; 2026 Decnet Games. PatchProof &mdash; Addressables Release Rehearsal Lab. Available on the <a href='https://assetstore.unity.com/packages/slug/421018'>Unity Asset Store</a> (Short link: <a href='https://u3d.as/4g0P'>u3d.as/4g0P</a>). Tested on Unity 6000.5.4f1 LTS with Addressables 2.9.1. All rights reserved."
+
+# Callouts configuration
+callouts:
+  note:
+    title: Note
+    color: purple
+  tip:
+    title: Pro Tip
+    color: green
+  warning:
+    title: Warning
+    color: red
+  important:
+    title: Important
+    color: blue
